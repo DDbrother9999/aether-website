@@ -1,27 +1,32 @@
 @import "tailwindcss";
 
-@theme {
-    --color-aether-sky: #336699;
-    --color-aether-dark: #2f3634;
-    --color-aether-green: #5d8e3e;
-    --color-aether-text: #ffffff;
+@font-face {
+    font-family: "Phantom Sans";
+    src: url("https://assets.hackclub.com/fonts/PhantomSans-Regular.woff2")
+    format("woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Phantom Sans";
+    src: url("https://assets.hackclub.com/fonts/PhantomSans-Bold.woff2")
+    format("woff2");
+    font-weight: 700;
+}
 
-    --font-sans: "Geist", "Arial", sans-serif;
+@theme {
+    --color-aether-sky: #1062a3;
+    --color-aether-dark: #2e3f36;
+    --color-aether-green: #499300;
+    --color-aether-footer: #2284c6;
+
+    --font-display: "Phantom Sans", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-sans: "Inter", system-ui, sans-serif;
 }
 
 body {
-    background: var(--color-aether-sky);
-    color: var(--color-aether-text);
-    font-family: var(--font-sans), serif;
     margin: 0;
-    padding: 0;
     min-height: 100vh;
-}
-
-@utility container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    background: var(--color-aether-sky);
+    font-family: var(--font-body);
 }
